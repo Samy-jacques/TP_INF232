@@ -13,7 +13,10 @@ router = APIRouter(prefix="/api", tags=["data"])
 
 VALID_FEATURES = list(ds.FEATURE_LABELS.keys())
  
- 
+@router.get("/health")
+async def health_check():
+    return {"status": "up and running"}
+
 @router.get("/dataset")
 def get_dataset(
     mode: Literal["original", "user", "combined"] = Query("combined"),
