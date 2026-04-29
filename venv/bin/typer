@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/samuel/.Projects/Web Dev/TPC232/venv/bin/python3" "$0" "$@"
+'''exec' "/home/samuel/.Projects/Web Dev/TPC232/TP_INF232/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
